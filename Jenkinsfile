@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Test') {
       steps {
-        bat 'npm run ng test --single-run=true'
+        bat 'npm run ng test --single-run=false'
       }
     }
   }
