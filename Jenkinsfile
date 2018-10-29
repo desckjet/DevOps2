@@ -3,12 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh '''cd C:\\Program Files (x86)
-cd Jenkins
-cd workspace
-cd DevOps
-npm install
-ng test'''
+        bat 'cd C:\\Program Files (x86) cd Jenkins cd workspace cd DevOps npm install ng serve'
       }
     }
     stage('Test') {
