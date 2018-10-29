@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Test') {
       steps {
-        sh 'npm run ng test'
+        bat 'npm run ng test'
       }
     }
   }
