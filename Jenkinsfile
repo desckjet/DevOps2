@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Test') {
       steps {
-        bat 'npm run ng e2e'
+        sh 'npm run ng test'
       }
     }
   }
