@@ -8,8 +8,7 @@ pipeline {
     }
     stage('Test') {
       steps {
-        sleep(time: 4, unit: 'MINUTES')
-        bat 'npm run ng test '
+        bat 'npm run ng e2e'
       }
     }
   }
