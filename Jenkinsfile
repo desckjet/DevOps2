@@ -3,8 +3,9 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        bat 'cd C:\\Program Files (x86)\\Jenkins\\workspace\\DevOps2_prueba-2HXQOU2YEVPSGLRYZIQEDBBBGR76PSE47IOSBGP452W6EKJKV5PQ'
-        sh 'npm install'
+        sh '''cd C:\\Program Files (x86)\\Jenkins\\workspace\\DevOps2_prueba-2HXQOU2YEVPSGLRYZIQEDBBBGR76PSE47IOSBGP452W6EKJKV5PQ
+npm install
+ng serve'''
       }
     }
     stage('Test') {
