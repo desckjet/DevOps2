@@ -6,6 +6,8 @@ pipeline {
         bat 'cd C:\\Program Files (x86)\\Jenkins\\workspace\\DevOps2_prueba-2HXQOU2YEVPSGLRYZIQEDBBBGR76PSE47IOSBGP452W6EKJKV5PQ'
         bat 'npm install'
         bat 'npm run ng serve'
+        bat '^C'
+        bat 's'
       }
     }
     stage('Test') {
