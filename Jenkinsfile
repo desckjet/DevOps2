@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Test') {
       steps {
-        bat 'npm run ng test --watch=false'
+        bat 'ng test --watch=false'
       }
     }
   }
