@@ -3,7 +3,9 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        bat 'npm run ng build'
+        bat 'npm install -g @angular/cli'
+        bat 'npm install'
+        bat 'ng build'
       }
     }
     stage('Test') {
