@@ -8,9 +8,12 @@ import { Component } from '@angular/core';
 export class AppComponent{
 
   public val1:number;
+  public val2:string;
   public rta:Array<string>;
 
   public operacion(n:number) {
+    this.val2 = ''
+    this.numeroNegativo();
   	var
   		values = [1, 5, 10, 50, 100, 500, 1000],
   		letras = ['I', 'V', 'X', 'L', 'C', 'D', 'M'],
@@ -39,4 +42,13 @@ export class AppComponent{
     this.rta = res;
     return this.rta;
   }
+
+  public numeroNegativo(){
+    if(this.val1 <= -1){
+      this.val2 = 'Porfavor ingrese un numero positivo'
+    } else if(this.val1 == 0){
+      this.val2 = 'el cero no cuenta'
+    }
+  }
+
 }
