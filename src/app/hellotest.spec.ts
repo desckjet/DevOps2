@@ -15,7 +15,7 @@ describe('hellotest', ()=>{
     notExpected = '';
   });
 
-  xit('mirar si es igual',
+  /*xit('mirar si es igual',
     ()=> expect('hello').toBe(expected));
 
   xit('mirar si no es igual',
@@ -23,4 +23,5 @@ describe('hellotest', ()=>{
 
   xit('mirar si empieza por he',
     ()=> expect('hello').toMatch(expectMatch));
+    */
 });
