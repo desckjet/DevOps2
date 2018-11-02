@@ -41,4 +41,15 @@ describe('TestService', () => {
     expect(service.operacion(5)).not.toContain('M')
   }));
 
+  it('no debe contener ningun numero romano',
+  inject([TestService], (service: TestService) => {
+    expect(service.operacion(-1)).not.toContain('I')
+    expect(service.operacion(-1)).not.toContain('V')
+    expect(service.operacion(-1)).not.toContain('X')
+    expect(service.operacion(-1)).not.toContain('L')
+    expect(service.operacion(-1)).not.toContain('C')
+    expect(service.operacion(-1)).not.toContain('D')
+    expect(service.operacion(-1)).not.toContain('M')
+  }));
+
 });
