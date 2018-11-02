@@ -26,9 +26,19 @@ describe('TestService', () => {
     expect(service.operacion).toBeTruthy();
   }));
 
-  it('deveria mostrar el numero romano correspondiente',
+  it('deberia mostrar el numero romano correspondiente',
   inject([TestService], (service: TestService) => {
     expect(service.operacion(5)).toContain('V');
+  }));
+
+  it('no deberia contener el numero romano correspondiente',
+  inject([TestService], (service: TestService) => {
+    expect(service.operacion(5)).not.toContain('I')
+    expect(service.operacion(5)).not.toContain('X')
+    expect(service.operacion(5)).not.toContain('L')
+    expect(service.operacion(5)).not.toContain('C')
+    expect(service.operacion(5)).not.toContain('D')
+    expect(service.operacion(5)).not.toContain('M')
   }));
 
 });
